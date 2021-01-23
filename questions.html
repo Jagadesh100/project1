@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>ஆ ட்டத்துக்கு  ரெடியா?</title>
+        <link rel="stylesheet" href="css/style.css" />
+    </head>
+    <body>
+        <!-- content here  -->
+		<div class="box" id="questionScreen">
+		
+			<div class="title">
+				Online Quiz Application
+			</div>
+			
+			<div class="header">
+				<div class="scorebox">Score : <span>0 </span></div>
+				<div class="timerbox">Time left : <span> </span></div>
+			</div>
+			<div class="questionbox" align="center">
+				How many times CSK won IPL trophy?
+			</div>
+			<div class="optionbox" align="center">
+				<span onClick="checkAnswer(this)" data-opt="1"></span>
+				<span onClick="checkAnswer(this)" data-opt="2"></span>
+				<span onClick="checkAnswer(this)" data-opt="3"></span>
+				<span onClick="checkAnswer(this)" data-opt="4"></span>
+			</div>
+			
+			<div class="footer">
+				<button onclick="showNext()">
+					Next
+				</button>
+				<button onclick="showResult()">
+					Show Result
+				</button>
+			</div>
+		</div>
+		
+		<div class="box" id="resultscreen" style="display:none">
+			<div class="title">
+				Online Quiz Result
+			</div>
+			
+			<div class="resultbox">
+				<label>Questions : </label>
+				<span id="Total Question">10</span>
+				<label>Attempt : </label>
+				<span id="attemptquestion">9</span>
+				<label>correct : </label>
+				<span id="correctanswer">5</span>
+				<label>wrong : </label>
+				<span id="wronganswer">4</span>
+			</div>
+			<div class="bb">
+				<a href="index.html">Start Again</a>
+			</div>
+		</div>
+    </body>
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="js/quiz.js"></script>
+    <script src="js/script.js"></script>
+</html>
